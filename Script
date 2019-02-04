@@ -1,0 +1,68 @@
+# print(articles)
+
+n=0
+
+
+for article in articles :
+	print(article)
+	n+=1
+	print(n,article)
+	article=article.split(',')
+	
+
+media=["La Presse+","Le Devoir","Le Soleil","Le Nouvelliste","La Tribune","La Voix de l'Est"]
+
+
+l2=[article[0:609][0]]
+
+
+section=[article[0:609][1]]
+
+
+mots=[article[0:609][2]]
+
+
+pages=[article[0:609][3]]
+
+
+nbmlapresse = 0
+
+
+nbmledevoir = 0
+
+
+nbmlesoleil = 0
+
+
+nbmlenouvelliste = 0
+
+
+nbmlatribune = 0
+
+
+nbmvoixdelest = 0
+
+
+if l2 == media[0] :
+	nbmlapresse +=1
+elif l2 == media[1] :
+	nbmledevoir +=1
+elif l2 == media[2] :
+	nbmlesoleil +=1
+elif l2 == media[3] :
+	nbmlenouvelliste +=1
+elif l2 == media[4] :
+	nbmlatribune +=1
+else : 
+	nbmvoixdelest +=1
+
+print(articles)
+print("Il y a ", nbmlapresse, "dans", media[0], "\n", "Il y a ", nbmledevoir, "dans", media[1], "\n", "Il y a ", nbmlesoleil, "dans", media[2], "\n", "Il y a ", nbmlenouvelliste, "dans", media[3], "\n", "Il y a ", nbmlatribune, "dans", media[4], "\n", "Il y a ", nbmvoixdelest, "dans", media[5], "\n")
+
+
+
+
+
+
+
+
